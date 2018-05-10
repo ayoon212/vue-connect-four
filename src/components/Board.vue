@@ -100,7 +100,6 @@ export default {
         // TODO: Ever heard of elegance?
         for (let i = minColIndex; i <= minColIndex+3 && i <= maxColIndex-3; i++) {
           const colOffset = Math.abs(colIndex-i);
-          // TODO: Probably need to add an inner loop to construct the arrays correctly
           const diagonalUpLeft = [
             this.board.columns[i] ? this.board.columns[i][rowIndex+colOffset] : null,
             this.board.columns[i+1] ? this.board.columns[i+1][rowIndex+colOffset-1] : null,
